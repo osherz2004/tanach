@@ -1,0 +1,64 @@
+/* Root */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Calibri, sans-serif;
+}
+
+/* Header */
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+/* Sections */
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 1080px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        font-size: 2em;
+    }
+}
+
+.container img {
+    height: 60%;
+    width: 60%;
+}
